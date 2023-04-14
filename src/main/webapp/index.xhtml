@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+		<title>JSF - Myfaces Example</title>
+	</h:head>
+	<h:body>
+		<h1>Venta de recargas</h1>
+
+		<div>
+			<h:form>
+				<p>Digite su numero: </p>
+					<h:inputText value="#{sell.phoneNumber}"> </h:inputText>
+				<p>Digite su nombre: </p>
+				<h:inputText value="#{sell.name}"> </h:inputText>
+
+				<p>Digite la cantidad: </p>
+				<h:inputText value="#{sell.quantity}"></h:inputText>
+
+				<p>Digite el valor: </p>
+				<h:inputText value="#{sell.value}"></h:inputText>
+
+				<h:commandButton value="Recargar"></h:commandButton>
+
+			</h:form>
+
+
+
+		</div>
+
+	</h:body>
+</html>
